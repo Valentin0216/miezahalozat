@@ -1,0 +1,463 @@
+S1
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw1
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+ser pass
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+S2
+
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw2
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+ser pass
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+
+vlan 10
+name Purple
+vlan 20
+name Green
+vlan 30
+name Light blue
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int g0/2
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+S3
+
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw3
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+ser pass
+
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+
+S4
+
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw4
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+ser pass
+
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int g0/2
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+S5
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw5
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+ser pass
+
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int g0/2
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+
+
+
+
+
+
+S6
+
+ena
+clock set 12:00:00 30 nov 2022
+conf t
+host Sw6
+ena sec class123
+no ip domain-l
+banner motd #Private router#
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+lin vty 0 15
+pass cisco123
+login
+exec 8
+exit
+ser pass
+
+
+vlan 10
+name light blue
+vlan 20
+name purple
+vlan 30
+name orange
+vlan 40
+name green
+vlan 99
+name Native
+exit
+
+
+int g0/2
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int r f0/1-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-12
+swit mode acc
+swit acc vlan 20
+int r f0/13-18
+swit mode acc
+swit acc vlan 30
+int r f0/19-23
+swit mode acc
+swit acc vlan 40
+int f0/24
+swit mode acc
+swit acc vlan 99
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
