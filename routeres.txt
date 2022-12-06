@@ -1,0 +1,107 @@
+Router 1:
+
+ena
+clock set 12:00:00 1 dec 2022
+conf t
+host R1
+banner motd #Privat router!#
+login block-for 120 attempts 3 within 60
+security passwords min-length 8
+ena sec class123
+no ip domain-lookup
+ser pass
+line con 0
+pass cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass cisco123
+login
+exec 5
+exit
+
+int gig0/1.10
+encap dot1 10
+ip add 192.168.10.1 255.255.255.248
+exit
+
+int gig0/1.20
+encap dot1 20
+ip add 192.168.20.1 255.255.255.248
+exit
+
+int gig0/1.30
+encap dot1 30
+ip add 192.168.30.1 255.255.255.248
+exit
+
+int gig0/1.40
+encap dot1 40
+ip add 192.168.40.1 255.255.255.248
+exit
+
+int gig0/1.99
+encap dot1 99
+ip add 192.168.9.1 255.255.255.248
+exit
+
+int gig0/1
+no sh
+exit
+
+int gig0/0
+ip add 192.168.10.252 255.255.255.248
+no sh
+exit
+
+---------------------------------------------------
+Router 2:
+
+ena
+clock set 12:00:00 1 dec 2022
+conf t
+host R2
+banner motd #Privat router!#
+login block-for 120 attempts 3 within 60
+security passwords min-length 8
+ena sec class123
+no ip domain-lookup
+ser pass
+line con 0
+pass cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass cisco123
+login
+exec 5
+exit
+
+int fa1/0.10
+encap dot1 10
+ip add 192.168.11.1 255.255.255.248
+exit
+
+int fa1/0.20
+encap dot1 20
+ip add 192.168.21.1 255.255.255.248
+exit
+
+int fa1/0.30
+encap dot1 30
+ip add 192.168.31.1 255.255.255.248
+exit
+
+int fa1/0.40
+encap dot1 40
+ip add 192.168.41.1 255.255.255.248
+exit
+
+int fa0/0
+ip add 192.168.10.253 255.255.255.248
+no sh
+exit
