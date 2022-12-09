@@ -10,16 +10,16 @@ Nincs rá péz!
 </div>
 
 <div align="left">
-  <h1>1.) Alapkonfig az esközökhöz</h1>
-  <h1>2.) IP Címek beállítása az állomásokra</h1>
-      <h1>a.) Teszt</h1>
-  <h1>3.) IP Címek beállítása a hálózatra</h1>
-      <h1> a.) Teszt</h1>
-  <h1>4.) VLAN-ok beállítása</h1>
-      <h1>a.) Teszt</h1>
-        <h1><b>INNEN KEZDŐDIK A GOND</b></h1>
-  <h1>5.) beágyazás</h1>
-      <h1>a.) Teszt</h1>
-  <h1>6.) Route</h1>
-      <h1>a.) Teszt</h1>
+  <p>1.) Alapkonfig az esközökhöz</p>
+  <p>2.) IP Címek beállítása az állomásokra</p>
+      <p>a.) Teszt</p>
+  <p>3.) IP Címek beállítása a hálózatra</p>
+      <p> a.) Teszt</p>
+  <p>4.) VLAN-ok beállítása</p>
+      <p>a.) Teszt</p>
+        <p><b>INNEN KEZDŐDIK A GOND</b></p>
+  <p>5.) beágyazás</p>
+      <p>a.) Teszt</p>
+  <p>6.) Route</p>
+      <p>a.) Teszt</p>
   </div>
