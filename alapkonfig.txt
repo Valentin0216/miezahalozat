@@ -1,0 +1,160 @@
+S1
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S1
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
+
+S2
+
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S2
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
+
+
+
+S3
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S3
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
+
+
+
+
+
+
+
+S4
+
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S4
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
+
+
+
+
+
+
+S5
+
+
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S5
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
+
+
+
+
+
+
+S6
+
+
+ena
+clock set 12:00:00 13 dec 2022
+conf t
+host S6
+ena sec class123
+no ip domain-l
+ser pas
+banner motd "Privat"
+lin con 0
+pass cisco123
+login
+logg syn
+exec 8
+exit
+lin vty 0 15
+pass cisco123
+login
+logg syn
+exec 8
+exit
