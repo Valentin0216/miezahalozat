@@ -7,19 +7,22 @@ Nincs rá péz!
   <i>***Ahol a pénz diktál!***</i>
   <br>
   <i>Ahol a NAV nem jár!</i>
+  <br>
 </div>
 
 <div align="left">
-  <p>1.) Alapkonfig az esközökhöz</p>
-  <p>2.) IP Címek beállítása az állomásokra</p>
-      <p>a.) Teszt</p>
-  <p>3.) IP Címek beállítása a hálózatra</p>
-      <p> a.) Teszt</p>
-  <p>4.) VLAN-ok beállítása</p>
-      <p>a.) Teszt</p>
-        <p><b>INNEN KEZDŐDIK A GOND</b></p>
-  <p>5.) beágyazás</p>
-      <p>a.) Teszt</p>
-  <p>6.) Route</p>
-      <p>a.) Teszt</p>
-  </div>
+  <li>1.) Alapkonfig az esközökhöz</li>
+  <li>2.) IP Címek beállítása az állomásokra</li>
+      <ul>a.) Teszt</ul>
+  <li>3.) IP Címek beállítása a hálózatra</li>
+      <ul> a.) Teszt</ul>
+  <li>4.) VLAN-ok beállítása</li>
+      <ul>a.) Teszt</ul>
+<br>
+<p><b>INNEN KEZDŐDIK A GOND</b></p>
+<br>
+  <li>5.) beágyazás</li>
+      <ul>a.) Teszt</ul>
+  <li>6.) Route</li>
+      <ul>a.) Teszt</ul>
+ </div>
