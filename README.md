@@ -26,3 +26,5 @@ Nincs rá péz!
   <li>Route</li>
       <ul>a.) Teszt</ul>
  </div>
+
+<i>Kapcsolodási teszt</i>
