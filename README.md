@@ -11,18 +11,18 @@ Nincs rá péz!
 </div>
 
 <div align="left">
-  <li>1.) Alapkonfig az esközökhöz</li>
-  <li>2.) IP Címek beállítása az állomásokra</li>
+  <li>Alapkonfig az esközökhöz</li>
+  <li>IP Címek beállítása az állomásokra</li>
       <ul>a.) Teszt</ul>
-  <li>3.) IP Címek beállítása a hálózatra</li>
+  <li>IP Címek beállítása a hálózatra</li>
       <ul> a.) Teszt</ul>
-  <li>4.) VLAN-ok beállítása</li>
+  <li>VLAN-ok beállítása</li>
       <ul>a.) Teszt</ul>
 <br>
 <p><b>INNEN KEZDŐDIK A GOND</b></p>
 <br>
-  <li>5.) beágyazás</li>
+  <li>beágyazás</li>
       <ul>a.) Teszt</ul>
-  <li>6.) Route</li>
+  <li>Route</li>
       <ul>a.) Teszt</ul>
  </div>
