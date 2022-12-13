@@ -28,3 +28,5 @@ Nincs rá péz!
  </div>
 
 <i>Kapcsolodási teszt</i>
+
+<b>IP cím: 199.200.10.0/29 (248)</b>
