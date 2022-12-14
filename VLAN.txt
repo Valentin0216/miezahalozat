@@ -1,0 +1,12 @@
+vlan 10
+name sotetkek
+vlan 20
+name kek
+vlan 30
+name zold
+vlan 40
+name narancssárga
+vlan 99
+name piros
+exit
+
