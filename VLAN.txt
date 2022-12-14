@@ -1,0 +1,109 @@
+vlan 10
+name sotetkek
+vlan 20
+name kek
+vlan 30
+name zold
+vlan 40
+name narancssárga
+vlan 99
+name piros
+exit
+
+S1
+
+int f0/1
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+
+
+int f0/24
+swit mode acc
+swit acc vlan 99
+
+int r f0/2-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-11
+swit mode acc
+swit acc vlan 20
+int r f0/12-16
+swit mode acc
+swit acc vlan 30
+int r f0/17-21
+swit mode acc
+swit acc vlan 40
+exit
+
+
+
+
+S2
+
+int f0/5
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int f0/22
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int f0/24
+swit mode acc
+swit acc vlan 99
+
+int r f0/2-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-11
+swit mode acc
+swit acc vlan 20
+int r f0/12-16
+swit mode acc
+swit acc vlan 30
+int r f0/17-21
+swit mode acc
+swit acc vlan 40
+exit
+
+
+S3
+
+int f0/5
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int f0/22
+swit mode trunk
+swit trunk nat vlan 99
+swit trunk allo vlan 10,20,30,40,99
+exit
+
+int f0/24
+swit mode acc
+swit acc vlan 99
+
+int r f0/2-6
+swit mode acc
+swit acc vlan 10
+int r f0/7-11
+swit mode acc
+swit acc vlan 20
+int r f0/12-16
+swit mode acc
+swit acc vlan 30
+int r f0/17-21
+swit mode acc
+swit acc vlan 40
+exit
+
+
