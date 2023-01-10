@@ -30,3 +30,7 @@ Nincs rá péz!
 <i>Kapcsolodási teszt</i>
 
 <b>IP cím: 199.200.10.0/29 (248)</b>
+
+
+<i>Itt lehet donatelni:</i>
+<i>valentin_valamilyen_linkje</i>
